@@ -53,3 +53,6 @@ INFO:
 - To apply these settings, you must use the above command to start your `mongod` each time. 
 - I use the `brew` formula default of `4096` for both limits here. Not sure why they're different. Edit to meet your needs.
 - I could not find a way to verify that these changes took effect for the `mongod` processes, but this is the same way we apply these setings in production with `brew`. YMMV.
+
+### SOURCES:
+- https://www.real-world-systems.com/docs/launchdPlist.1.html
