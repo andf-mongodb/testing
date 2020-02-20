@@ -3,14 +3,14 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-      <string>limit.maxprocs</string>
+      <string>limit.maxproc</string>
     <key>ProgramArguments</key>
       <array>
         <string>launchctl</string>
         <string>limit</string>
         <string>maxproc</string>
-        <string>64000</string>
-        <string>64000</string>
+        <string>2128</string>
+        <string>2128</string>
       </array>
     <key>RunAtLoad</key>
       <true />
