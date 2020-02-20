@@ -21,14 +21,12 @@ sudo launchctl start limit.maxprocs
 ```
 
 INFO:
-- With `RunAtLoad` set, these two files will automatically run at boot. Test with one of:
+- With `RunAtLoad` set, these two files will automatically run at boot. Test following a reboot with one of:
 
-```
-sysctl -a | egrep '(maxfiles|maxproc)'
-launchctl limit
-```
-
-after a reboot.
+  ```
+  sysctl -a | egrep '(maxfiles|maxproc)'
+  launchctl limit
+  ```
 
 - I use the mongodb UNIX defaults of `64000` for both limits here. Edit to meet your needs.
 
