@@ -3,30 +3,30 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.mongodb-with-limits</string>
+    <string>com.mongodb-with-limits</string>
   <key>ProgramArguments</key>
-  <array>
-    <string>/path/to/mongod</string>
-    <string>--config</string>
-    <string>/path/to/mongod.conf</string>
-  </array>
+    <array>
+      <string>/path/to/mongod</string>
+      <string>--config</string>
+      <string>/path/to/mongod.conf</string>
+    </array>
   <key>RunAtLoad</key>
-  <false/>
+    <false/>
   <key>KeepAlive</key>
-  <false/>
+    <false/>
   <key>HardResourceLimits</key>
-  <dict>
-    <key>NumberOfFiles</key>
-    <integer>4096</integer>
-    <key>NumberOfProcesses</key>
-    <integer>4096</integer>
-  </dict>
+    <dict>
+      <key>NumberOfFiles</key>
+        <integer>4096</integer>
+      <key>NumberOfProcesses</key>
+        <integer>4096</integer>
+    </dict>
   <key>SoftResourceLimits</key>
-  <dict>
-    <key>NumberOfFiles</key>
-    <integer>4096</integer>
-    <key>NumberOfProcesses</key>
-    <integer>4096</integer>
-  </dict>
+    <dict>
+      <key>NumberOfFiles</key>
+        <integer>4096</integer>
+      <key>NumberOfProcesses</key>
+        <integer>4096</integer>
+    </dict>
 </dict>
 </plist>
