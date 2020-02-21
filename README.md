@@ -18,12 +18,15 @@
    sudo launchctl load /Library/LaunchDaemons/limit.maxproc.plist
    ```
 
-4. Run once with:
+4. Run once with (optional):
 
    ```
    sudo launchctl start limit.maxfiles
    sudo launchctl start limit.maxproc
    ```
+
+5. Restart. The expected settings should now be set on boot.
+
 
 INFO:
 - With `RunAtLoad` set, these two files will automatically run at boot. Test following a reboot with one of:
