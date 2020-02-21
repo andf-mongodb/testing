@@ -4,14 +4,21 @@
 
 1. Copy both `limit.*.plist` files to `/Library/LaunchDaemons/`
 
-2. Enable with:
+2. Set perms:
+
+   ```
+   sudo chown root:wheel /Library/LaunchDaemons/limit.maxfiles.plist
+   sudo chown root:wheel /Library/LaunchDaemons/limit.maxproc.plist
+   ```
+
+3. Enable with:
 
    ```
    sudo launchctl load /Library/LaunchDaemons/limit.maxfiles.plist
    sudo launchctl load /Library/LaunchDaemons/limit.maxproc.plist
    ```
 
-3. Run once with:
+4. Run once with:
 
    ```
    sudo launchctl start limit.maxfiles
