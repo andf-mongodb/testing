@@ -36,7 +36,7 @@ INFO:
   launchctl limit
   ```
 
-- I use the mongodb UNIX default of `64000` for `maxfiles` here, but for `maxproc`, macOS seems to reject the suggested UNIX default of `64000`. It even rejected `4096` which is what `brew` attempts to set. I use `2128` instead. Edit to meet your needs.
+- I use the mongodb UNIX default of `64000` for `maxfiles` here, but for `maxproc`, macOS seems to reject any value for this setting over 2500, so I use `2128` instead. Edit to meet your needs.
 
 ### SOURCES:
 - https://www.real-world-systems.com/docs/launchdPlist.1.html
