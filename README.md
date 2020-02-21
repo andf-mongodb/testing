@@ -2,6 +2,8 @@
 
 ## macos_ulimit - Set `maxproc` and `maxfiles` at boot.
 
+Tested working on 10.14 and 10.15.
+
 1. Copy both `limit.*.plist` files to `/Library/LaunchDaemons/`
 
 2. Set perms:
