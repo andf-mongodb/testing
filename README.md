@@ -18,7 +18,7 @@
    sudo launchctl load /Library/LaunchDaemons/limit.maxproc.plist
    ```
 
-4. Run once with (optional):
+4. Run once (optional):
 
    ```
    sudo launchctl start limit.maxfiles
